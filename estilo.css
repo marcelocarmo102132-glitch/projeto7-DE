@@ -1,0 +1,380 @@
+/* ===================================================== */
+/* CONFIGURAÇÕES GERAIS */
+/* ===================================================== */
+
+body {
+
+    /* Retira a margem automática do navegador */
+    margin: 0;
+
+    /* Define a fonte */
+    font-family: Arial, sans-serif;
+
+    /* Define a cor de fundo */
+    background-color: #f5f7fa;
+
+    /* Define a cor principal dos textos */
+    color: #222;
+
+    /* Melhora o espaçamento entre linhas */
+    line-height: 1.6;
+}
+
+
+/* ===================================================== */
+/* CABEÇALHO */
+/* ===================================================== */
+
+header {
+
+    background-color: #163a63;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+
+header h1 {
+
+    font-size: 36px;
+
+    margin-bottom: 5px;
+}
+
+
+/* ===================================================== */
+/* MENU */
+/* ===================================================== */
+
+nav {
+
+    /* Ativa o Flexbox */
+    display: flex;
+
+    /* Centraliza os itens */
+    justify-content: center;
+
+    /* Permite quebrar linha em telas menores */
+    flex-wrap: wrap;
+
+    background-color: #0d263f;
+
+    padding: 15px;
+}
+
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    margin: 5px 15px;
+
+    font-weight: bold;
+}
+
+
+/* Efeito quando o mouse passa pelo menu */
+nav a:hover {
+
+    text-decoration: underline;
+}
+
+
+/* ===================================================== */
+/* ÁREA PRINCIPAL */
+/* ===================================================== */
+
+main {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 20px;
+}
+
+
+/* ===================================================== */
+/* SEÇÕES */
+/* ===================================================== */
+
+section {
+
+    background-color: white;
+
+    margin: 30px 0;
+
+    padding: 30px;
+
+    border-radius: 10px;
+}
+
+
+section h2 {
+
+    color: #163a63;
+}
+
+
+/* ===================================================== */
+/* APRESENTAÇÃO */
+/* ===================================================== */
+
+.apresentacao {
+
+    text-align: center;
+
+    font-size: 18px;
+}
+
+
+/* ===================================================== */
+/* FLEXBOX DOS PROCESSOS */
+/* ===================================================== */
+
+.processos {
+
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    margin-top: 25px;
+}
+
+
+.processo {
+
+    background-color: #edf4ff;
+
+    padding: 20px;
+
+    width: 250px;
+
+    border-radius: 10px;
+}
+
+
+/* ===================================================== */
+/* CARDS */
+/* ===================================================== */
+
+.cards {
+
+    /* Ativa o Flexbox */
+    display: flex;
+
+    /* Espaçamento entre os cartões */
+    gap: 20px;
+
+    /* Permite quebrar linha */
+    flex-wrap: wrap;
+
+    /* Centraliza os cartões */
+    justify-content: center;
+}
+
+
+.card {
+
+    background-color: #f8fafc;
+
+    width: 280px;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px #cccccc;
+}
+
+
+.card h3 {
+
+    color: #1d4f91;
+}
+
+
+/* ===================================================== */
+/* BOTÕES */
+/* ===================================================== */
+
+button {
+
+    background-color: #1d4f91;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+
+button:hover {
+
+    background-color: #123866;
+}
+
+
+/* ===================================================== */
+/* LINKS */
+/* ===================================================== */
+
+a {
+
+    color: #1557a0;
+
+    font-weight: bold;
+}
+
+
+/* ===================================================== */
+/* RESPOSTAS DO JAVASCRIPT */
+/* ===================================================== */
+
+.resposta {
+
+    /* Começa escondida */
+    display: none;
+
+    background-color: #eaf4ff;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+    margin-top: 15px;
+}
+
+
+/* ===================================================== */
+/* PESQUISAS */
+/* ===================================================== */
+
+.lista-pesquisas {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+.pesquisa {
+
+    background-color: #f7f9fc;
+
+    padding: 20px;
+
+    border-left: 5px solid #1d4f91;
+
+    border-radius: 5px;
+}
+
+
+/* ===================================================== */
+/* FONTE */
+/* ===================================================== */
+
+.fonte {
+
+    background-color: #fff8df;
+
+    padding: 15px;
+
+    margin-top: 25px;
+
+    border-radius: 8px;
+}
+
+
+/* ===================================================== */
+/* DICAS */
+/* ===================================================== */
+
+.dica {
+
+    background-color: #edf7ed;
+
+    padding: 20px;
+
+    margin-top: 30px;
+
+    border-radius: 8px;
+}
+
+
+/* ===================================================== */
+/* ATIVIDADE */
+/* ===================================================== */
+
+.atividade {
+
+    text-align: center;
+}
+
+
+/* ===================================================== */
+/* RODAPÉ */
+/* ===================================================== */
+
+footer {
+
+    background-color: #0d263f;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+
+/* ===================================================== */
+/* CELULAR */
+/* ===================================================== */
+
+@media (max-width: 600px) {
+
+    header h1 {
+
+        font-size: 28px;
+    }
+
+
+    nav {
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    .card {
+
+        width: 100%;
+    }
+
+
+    .processo {
+
+        width: 100%;
+    }
+
+}
